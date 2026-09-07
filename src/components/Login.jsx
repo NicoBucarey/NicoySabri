@@ -8,7 +8,7 @@ function Login({ onLogin }) {
 
   function handleSubmit(event) {
     event.preventDefault()
-    if (username === 'NicoySabri' && password === 'TuJamonsin') {
+    if (username.toLowerCase() === 'nicoysabri' && password.toLowerCase() === 'tuesponjosin') {
       localStorage.setItem('nico-y-sabri-session', 'active')
       onLogin()
     } else {
